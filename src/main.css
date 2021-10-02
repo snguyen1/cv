@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .main-color {
+        color: #4A90E2;
+    }
+
+    #cv-info {
+        @apply
+        grid 
+        grid-flow-row
+        xl:grid-flow-col 
+        2xl:grid-flow-col
+        w-5/12
+    }
+
+
+    #cv-body {
+        @apply
+        w-full
+        flex
+        flex-col
+        sm:flex-col
+        md:flex-col
+        lg:flex-row
+        xl:flex-row
+        2xl:flex-row
+    }
+
+    .cv-body-left
+    {
+        @apply
+        w-2/3
+        h-full
+    }
+
+    .cv-body-right {
+        @apply
+        h-full
+        w-1/3
+    }
+
+    .cv-section {
+        @apply
+        w-full p-4
+    }
+
+    .cv-section-title {
+        border-bottom: 2px solid #afb4b5;
+        width: 100%;
+        display: block;
+        @apply
+        uppercase
+        leading-10
+        font-semibold
+    }
+    
+    .cv-label {
+        @apply
+        
+        pt-4
+    }
+
+    .cv-sublabel {
+        @apply
+        main-color
+        text-sm
+    }
+
+
+  }
