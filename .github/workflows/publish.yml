@@ -1,7 +1,7 @@
 name: Publish to my github.io
 
 on:
-  create:
+  push:
     tags:
       - v*
 
@@ -9,14 +9,21 @@ jobs:
   github-io:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
-      - uses: actions/setup-node@main
+      - name: Get tag name
+        id: get_tag_name
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ steps.get_tag_name.outputs.VERSION }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
       - name: Installing project dependencies
-      - run: npm install
+        run: npm install
       - name: Building the project
-      - run: npm run build
+        run: npm run build
       - name: GitHub Pages action
-      - uses: peaceiris/actions-gh-pages@v3.7.3
+        uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
