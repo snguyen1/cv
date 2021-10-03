@@ -3,7 +3,11 @@
     "title": "Lead Software Developer w/ Project Management",
     "info": [
         {
-            "type": "mobile",
+            "type": "location",
+            "value": "Corpus Christi, Texas"
+        },
+        {
+            "type": "phone",
             "value": "+1 361 232 9908"
         },
         {
@@ -16,11 +20,7 @@
         },
         {
             "type": "github",
-            "value": "snguyen1"
-        },
-        {
-            "type": "location",
-            "value": "Corpus Christi, Texas"
+            "value": "github.com/snguyen1"
         }
     ],
     "education": [
@@ -30,7 +30,7 @@
             "major": "Computer Science",
             "start": "August 2015",
             "end": "May 2017",
-            "gpa": "3.84 / 4.00",
+            "gpa": "3.83 / 4.00",
             "location": "Corpus Christi, Texas"
         },
         {
@@ -53,21 +53,36 @@
             "location": "Corpus Christi, Texas",
             "duties": [
                 {
-                    "desc": "Some description",
-                    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
+                    "desc": "Project Manager",
+                    "bullets": [
+                        "Oversee multiple software development projects",
+                        "Proposal writing",
+                        "Stakeholder communication",
+                        "Budget planning"
+                        ]
                 },
                 {
-                    "desc": "Some description 2",
-                    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
+                    "desc": "Lead Software Developer",
+                    "bullets": [
+                        "Design & build microservices and monolithic web apps",
+                        "Build and integrate CI/CD pipeline for containerized microservices with AzureDevOps, Azure pipeline, Azure Container Service, Azure PostgreSQL, Azure Storage Service, Azure Container Registry, and Github Actions",
+                        "Communicate and provide research software support for clients",
+                        "Mentoring full-time and part-time programmers"
+                ]
                 },
                 {
-                    "desc": "Some description 3",
-                    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
+                    "desc": "Others",
+                    "bullets": [
+                        "Interview & hire IT staffs and student workers",
+                        "Maintain Linux/Windows VMs and servers to comply with the university’s policy",
+                        "Monitor and manage resources on Azure"
+
+                    ]
                 }
             ]
         },
         {
-            "title": "Software Developer",
+            "title": "Software Applications Developer II",
             "company": "Harte Research Institute @ TAMUCC",
             "website": "https://hri.tamucc.edu",
             "start": "August 2017",
@@ -75,16 +90,16 @@
             "location": "Corpus Christi, Texas",
             "duties": [
                 {
-                    "desc": "Some description",
-                    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
-                },
-                {
-                    "desc": "Some description 2",
-                    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
-                },
-                {
-                    "desc": "Some description 3",
-                    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
+                    "desc": "",
+                    "bullets": [
+                        "Develop and maintain web application with Symfony3, Twig, PostgreSQL/PostGIS, RabbitMQ & ElasticSearch on CentOS6/7 with Apache",
+                        "Build releases, deploy software & resolve operational issues",
+                        "Write unit test and reviews code",
+                        "Work in Agile team (Standup, backlog grooming, Sprint Review/Retrospective)",
+                        "Agile Development with Atlassian products (BitBucket, JIRA, Confluence, Bamboo)",
+                        "Others: Docker, LDAP, Travis CI, Python for Data Science",
+                        "Volunteer: Workshop planning & organizing" 
+                        ]
                 }
             ]
         },
@@ -97,16 +112,12 @@
             "location": "Corpus Christi, Texas",
             "duties": [
                 {
-                    "desc": "Some description",
-                    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
-                },
-                {
-                    "desc": "Some description 2",
-                    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
-                },
-                {
-                    "desc": "Some description 3",
-                    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
+                    "desc": "",
+                    "bullets": [
+                        "C# ASP.NET web app development",
+                        "Front end development with JavaScript",
+                        "Create/maintain stored procedures in MS SQL Server"
+                        ]
                 }
             ]
         },
@@ -120,7 +131,12 @@
             "duties": [
                 {
                     "desc": "Some description",
-                    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
+                    "bullets": [
+                        "Lead and manage development team of student programmers on achieving deadlines and improving product quality",
+                        "Systems design and database administrator (Windows Server 2012/2016)",
+                        "Create Bash, PHP, Python & Windows shell scripts",
+                        "Integrate internal application with external RESTful service"
+                    ]
                 }
             ]
         }
@@ -143,10 +159,20 @@
             "items": ["Docker", "Azure", "Github Actions", "Azure Pipelines"]
         }
     ],
+    "languages": [
+        {
+            "name": "English",
+            "level": "Proficient"
+        },
+        {
+            "name": "Vietnamese",
+            "level": "Native"
+        }
+    ],
     "strengths": [
         {
-            "area": "Project Management",
-            "desc": "Rallies team towards deadlines"
+            "area": "Leadership",
+            "desc": "Rallying team towards deadlines"
         },
         {
             "area": "Mentorship",

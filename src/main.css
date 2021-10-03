@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer components {
+    
     .main-color {
         color: #4A90E2;
     }
@@ -10,16 +13,20 @@
     #cv-info {
         @apply
         grid 
-        grid-flow-row
+        grid-cols-2
+        md:grid-cols-3
         xl:grid-flow-col 
         2xl:grid-flow-col
+        place-content-around
         w-8/12
+
+        tracking-tight
         text-sm
     }
 
     #cv-info > div {
         @apply
-        px-2
+        pl-3
     }
 
 
@@ -77,14 +84,31 @@
         @apply
         leading-6
         pt-4
+        font-semibold
     }
 
     .cv-sublabel {
         @apply
         main-color
         text-sm
-        /* leading-4 */
     }
 
+
+    /* SVG sections */
+    .svg-icon {
+        width: 1.2em;
+        height: 1.2em;
+      }
+      
+      .svg-icon path,
+      .svg-icon polygon,
+      .svg-icon rect {
+        fill: #4691f6;
+      }
+      
+      .svg-icon circle {
+        stroke: #4691f6;
+        stroke-width: 1;
+      }
 
   }

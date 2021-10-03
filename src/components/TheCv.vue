@@ -1,47 +1,47 @@
 <template>
-  <div class="w-screen px-20 h-full bg-gray-50 m-auto py-4 border border-2">
+  <div class="w-full px-20 h-full bg-gray-50 m-auto py-4 border border-2">
     <div id="cv-header" class="w-screen flex flex-col">
       <div id="cv-name" class="text-xl font-bold">{{ data.fullname }}</div>
       <div id="cv-title" class="main-color pb-2">
           {{ data.title}}
       </div>
       <div id="cv-info">
-        <div v-for="info in data.info" :key="info.value">{{ info.value }}</div>
+        <div v-for="info in data.info" :key="info.value" class="flex flex-row">
+          <div class="w-1/12"><SvgIcon class="float-right mt-1 hover:animate-bounce" :name="info.type"/></div>
+          <div class="pl-1 leading-6">{{ info.value }}</div>
+          </div>
       </div>
     </div>
     <div id="cv-body">
       <div class="cv-body-left">
         <div id="cv-experience" class="cv-section">
           <div class="cv-section-title">Experience</div>
-            <div v-for="e in data.experience" :key="e.title" class="grid grid-flow-row">
+            <div v-for="e in data.experience" :key="e.title" class="grid grid-flow-col pb-2">
+              <div class="grid grid-flow-row">
               <div class="cv-label">
                 {{ e.title }}
               </div>
-              <div class="grid grid-flow-col w-full">
-                <div class="cv-sublabel w-8/12 tracking-tighter"><a :href="e.website" target="_blank">{{e.company}}</a></div>
-                <div class="flex flex-col">
-                  <div class="text-sm text-right">{{e.start}} - {{e.end}}</div>
-                  <!-- <div class="text-xs text-left">{{e.location}}</div> -->
-                </div>
-              </div>
+                  <div class="cv-sublabel w-full tracking-tighter"><a :href="e.website" target="_blank">{{e.company}}</a></div>
               <div v-for="d in e.duties" :key="d.desc" class="text-sm">
                 <div class="text-sm">{{  d.desc }}</div>
-                <li v-for="b in d.bullets" :key="b.id" class="text-xs">{{ b }}</li>
+                <li v-for="b in d.bullets" :key="b.id" class="text-xs ml-3 w-full">{{ b }}</li>
               </div>
+            </div>
+            <div class="text-sm pt-5 text-right">{{e.start}} - {{e.end}}</div>
             </div>
         </div>
       </div>
       <div class="cv-body-right">
         <div id="cv-education" class="cv-section">
           <div class="cv-section-title">Education</div>
-          <div v-for="e in data.education" :key="e.degree" class="grid grid-flow-col">
+          <div v-for="e in data.education" :key="e.degree" class="grid grid-flow-col pb-2">
             <div class="grid grid-flow-row">
               <div class="cv-label tracking-tighter">{{e.degree}}</div>
               <div class="cv-sublabel tracking-tighter">
                 {{ e.school }}
               </div>
-              <div class="text-sm text-left tracking-tighter">GPA: {{e.gpa}}</div>
-              <div class="text-sm"> {{ e.location }}</div>
+              <div class="text-xs"> {{ e.location }}</div>
+              <div class="text-xs text-left tracking-tighter">GPA: {{e.gpa}}</div>
             </div>
             <div class="text-sm pt-5 text-right">{{e.start}} - {{e.end}}</div>
           </div>
@@ -70,11 +70,14 @@
 </template>
 
 <script>
+import SvgIcon from '@/components/SvgIcon'
 import data from '../data.json'
 export default {
   name: "TheCv",
   props: {},
-  components: {},
+  components: {
+    SvgIcon
+  },
   data() {
     return {
       data
