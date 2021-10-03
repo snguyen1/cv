@@ -84,7 +84,9 @@ export default {
     }
   },
   computed: {},
-  mounted() {console.log(data)},
+  mounted() {
+    // console.log(data)
+    },
   methods: {},
   watch: {}
 };
