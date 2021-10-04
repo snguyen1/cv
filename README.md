@@ -1,24 +1,11 @@
-# cv
+Hello guys! I build this website to play with my Curriculum Vitae (CV).
 
-## Project setup
-```
-npm install
-```
+You can view the current version release at: snguyen1.github.io/cv
+<hr style="border-top: 0.5px solid lightblue">
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This web app uses:
+- Vue3 
+- Tailwindcss
+- Github Actions pipeline when triggers on new tag/release will build and release to my github page (snguyen1.github.io/cv)
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<hr style="border-top: 0.5px solid lightblue">
