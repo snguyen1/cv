@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full px-20 h-full bg-gray-50 m-auto py-4 border border-2">
+  <div class="w-full px-20 h-full bg-gray-50 m-auto py-4 border-2">
     <div id="cv-header" class="w-screen flex flex-col">
       <div id="cv-name" class="text-xl font-bold">{{ data.fullname }}</div>
       <div id="cv-title" class="main-color pb-2">
@@ -48,14 +48,15 @@
         </div>
         <div id="cv-skills" class="cv-section">
           <div class="cv-section-title">Skills</div>
-          <div v-for="s in data.skills" :key="s.area">
+          <div v-for="s in data.skills" :key="s.area" class="pb-2">
             <div class="cv-sublabel leading-8">{{ s.area }}</div>
             <div class="grid grid-flow-col-dense">
               <div v-for="i in s.items" :key="i.id" class="px-2 text-sm">{{ i }}</div>
             </div>
+            <div class="border "></div>
           </div>
         </div>
-        <div id="cv-strengths" class="cv-section">
+        <!-- <div id="cv-strengths" class="cv-section">
           <div class="cv-section-title">Strengths</div>
           <div v-for="s in data.strengths" :key="s.area">
             <div class="cv-sublabel">{{ s.area }}</div>
@@ -63,7 +64,7 @@
               {{ s.desc }}
             </div>
         </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

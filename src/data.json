@@ -1,6 +1,6 @@
 {
     "fullname": "Son D. Nguyen",
-    "title": "Lead Software Developer w/ Project Management",
+    "title": "Lead Software Developer / DevOps Engineer / Project Manager",
     "info": [
         {
             "type": "location",
@@ -39,7 +39,7 @@
             "minor": "Business Administration",
             "start": "August 2010",
             "end": "May 2015",
-            "gpa": "3.75 / 4.00",
+            "gpa": "3.74 / 4.00",
             "location": "Corpus Christi, Texas"
         }
     ],
@@ -92,7 +92,7 @@
                 {
                     "desc": "",
                     "bullets": [
-                        "Develop and maintain web application with Symfony3, Twig, PostgreSQL/PostGIS, RabbitMQ & ElasticSearch on CentOS6/7 with Apache",
+                        "Develop and maintain web application with Symfony3, Drupal, Twig, PostgreSQL/PostGIS, RabbitMQ & ElasticSearch on CentOS6/7 with Apache",
                         "Build releases, deploy software & resolve operational issues",
                         "Write unit test and reviews code",
                         "Work in Agile team (Standup, backlog grooming, Sprint Review/Retrospective)",
@@ -130,7 +130,7 @@
             "location": "Corpus Christi, Texas",
             "duties": [
                 {
-                    "desc": "Some description",
+                    "desc": "",
                     "bullets": [
                         "Lead and manage development team of student programmers on achieving deadlines and improving product quality",
                         "Systems design and database administrator (Windows Server 2012/2016)",
@@ -144,19 +144,35 @@
     "skills": [
         {
             "area": "Programming Languages",
-            "items": ["Javascript", "Typescript", "PHP7"]
+            "items": ["Javascript", "Typescript", "PHP7", "Python", "Bash"]
         },
         {
             "area": "Frameworks",
-            "items": ["Angular", "Vue", "ExpressJS", "Symfony"]
+            "items": ["Angular", "VueJS", "Symfony", "Ionic", "ExpressJS", "Loopback"]
         },
         {
             "area": "Database",
             "items": ["MySQL/MariaDB", "PostgreSQL/PostGIS", "MongoDB"]
         },
         {
-            "area": "DevOps",
-            "items": ["Docker", "Azure", "Github Actions", "Azure Pipelines"]
+            "area": "Others",
+            "items": ["ElasticSearch", "Kafka", "RabbitMQ", "Stripe Api", "ESRI Api"]
+        },
+        {
+            "area": "Web services",
+            "items": ["Apache", "Nginx"]
+        },
+        {
+            "area": "CI/CD",
+            "items": ["Github Actions", "Azure Pipelines", "Travis CI"]
+        },
+        {
+            "area": "Environments",
+            "items": ["Docker", "Azure", "RHEL7/8", "Windows Server", "Linux"]
+        },
+        {
+            "area": "Project Management",
+            "items": ["Azure Devops", "JIRA", "Trello"]
         }
     ],
     "languages": [
