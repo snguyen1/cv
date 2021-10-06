@@ -12,21 +12,24 @@
 
     #cv-info {
         @apply
-        grid 
-        grid-cols-2
+        2xl:inline-flex
+        xl:inline-flex
+        lg:inline-flex
+        md:grid
         md:grid-cols-3
-        xl:grid-flow-col 
-        2xl:grid-flow-col
-        place-content-start
-        w-8/12
-
+        sm:grid
+        sm:grid-cols-2
+        grid
+        grid-cols-1
+        gap-4
+        w-screen
         tracking-tight
         text-sm
     }
 
     #cv-info > div {
         @apply
-        pl-3
+        pl-2
     }
 
 
@@ -48,9 +51,9 @@
         w-full
         sm:w-full
         md:w-full
-        lg:w-2/3
-        xl:w-2/3
-        2xl:w-2/3
+        lg:w-1/2
+        xl:w-1/2
+        2xl:w-5/12
         h-full
     }
 
@@ -59,9 +62,9 @@
         w-full
         sm:w-full
         md:w-full
-        lg:w-2/3
-        xl:w-2/3
-        2xl:w-2/3
+        lg:w-1/2
+        xl:w-1/2
+        2xl:w-5/12
         h-full
     }
 
@@ -91,6 +94,12 @@
         @apply
         main-color
         text-sm
+    }
+
+
+    .cv-start-end-date {
+        @apply
+        block md:inline-flex xl:inline-flex 2xl:inline-flex justify-end text-sm leading-6 pt-4 text-right gap-x-1 tracking-tighter
     }
 
 

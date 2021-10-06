@@ -1,5 +1,5 @@
 <template>
-<div class="w-screen">
+<div class="overflow-x-hidden">
   <TheCv></TheCv>
 
 </div>
