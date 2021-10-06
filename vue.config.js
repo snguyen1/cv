@@ -7,7 +7,8 @@ module.exports = {
     config.module
       .rule('svg-sprite')
       .use('svgo-loader')
-      .loader('svgo-loader')
+      .loader('svgo-loader').end();
+    config
       .plugin('html')
       .tap(args => {
         args[0].title = "My CV"
