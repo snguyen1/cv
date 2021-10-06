@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full px-20 h-full bg-gray-50 m-auto py-4 border border-2">
+  <div class="w-screen px-4 h-screen bg-gray-50 py-4">
     <div id="cv-header" class="w-screen flex flex-col">
       <div id="cv-name" class="text-xl font-bold">{{ data.fullname }}</div>
       <div id="cv-title" class="main-color pb-2">
@@ -27,7 +27,7 @@
                 <li v-for="b in d.bullets" :key="b.id" class="text-xs ml-3 w-full">{{ b }}</li>
               </div>
             </div>
-            <div class="text-sm pt-5 text-right">{{e.start}} - {{e.end}}</div>
+            <div class="cv-start-end-date"><div>{{e.start}}</div> <div class="hidden md:inline lg:inline 2xl:inline">-</div> <div>{{e.end}}</div></div>
             </div>
         </div>
       </div>
@@ -37,25 +37,26 @@
           <div v-for="e in data.education" :key="e.degree" class="grid grid-flow-col pb-2">
             <div class="grid grid-flow-row">
               <div class="cv-label tracking-tighter">{{e.degree}}</div>
-              <div class="cv-sublabel tracking-tighter">
+              <div class="cv-sublabel tracking-tight">
                 {{ e.school }}
               </div>
               <div class="text-xs"> {{ e.location }}</div>
-              <div class="text-xs text-left tracking-tighter">GPA: {{e.gpa}}</div>
+              <div class="text-xs text-left">GPA: {{e.gpa}}</div>
             </div>
-            <div class="text-sm pt-5 text-right">{{e.start}} - {{e.end}}</div>
+            <div class="cv-start-end-date"><div>{{e.start}}</div> <div class="hidden md:inline lg:inline 2xl:inline">-</div> <div>{{e.end}}</div></div>
           </div>
         </div>
         <div id="cv-skills" class="cv-section">
           <div class="cv-section-title">Skills</div>
-          <div v-for="s in data.skills" :key="s.area">
+          <div v-for="s in data.skills" :key="s.area" class="pb-2">
             <div class="cv-sublabel leading-8">{{ s.area }}</div>
-            <div class="grid grid-flow-col-dense">
+            <div class="grid grid-flow-row-dense xl:grid-flow-col-dense 2xl:grid-flow-col-dense place-content-start gap-x-2">
               <div v-for="i in s.items" :key="i.id" class="px-2 text-sm">{{ i }}</div>
             </div>
+            <div class="border "></div>
           </div>
         </div>
-        <div id="cv-strengths" class="cv-section">
+        <!-- <div id="cv-strengths" class="cv-section">
           <div class="cv-section-title">Strengths</div>
           <div v-for="s in data.strengths" :key="s.area">
             <div class="cv-sublabel">{{ s.area }}</div>
@@ -63,7 +64,7 @@
               {{ s.desc }}
             </div>
         </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -84,7 +85,9 @@ export default {
     }
   },
   computed: {},
-  mounted() {console.log(data)},
+  mounted() {
+    // console.log(data)
+    },
   methods: {},
   watch: {}
 };
