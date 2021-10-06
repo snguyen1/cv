@@ -8,5 +8,10 @@ module.exports = {
       .rule('svg-sprite')
       .use('svgo-loader')
       .loader('svgo-loader')
+      .plugin('html')
+      .tap(args => {
+        args[0].title = "My CV"
+        return args
+      })
   }
 }

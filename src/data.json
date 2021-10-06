@@ -164,7 +164,7 @@
         },
         {
             "area": "CI/CD",
-            "items": ["Github Actions", "Azure Pipelines", "Travis CI"]
+            "items": ["Github Actions", "Azure Pipelines", "Travis CI", "Ansible", "Terraform"]
         },
         {
             "area": "Environments",
